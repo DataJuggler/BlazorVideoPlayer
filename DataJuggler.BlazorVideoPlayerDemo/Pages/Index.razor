@@ -1,0 +1,15 @@
+﻿@page "/"
+@using DataJuggler.BlazorVideo
+@inject IJSRuntime JSRuntime
+
+<h1>Blazor Video Demo!!</h1>
+
+<button @onclick="GetCurrentTime">Get Current Time</button>
+<p id="displayTime">@DisplayTime</p>
+
+<BlazorVideoPlayer Parent=this AllowDownloads="false" VideoUrl="ScreenSaver.mp4">
+</BlazorVideoPlayer>
+
+
+
+

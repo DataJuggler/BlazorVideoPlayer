@@ -1,0 +1,57 @@
+﻿@using BlazorStyled
+
+<Styled @bind-Classname="@GraphStyle">
+    float: left;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 50%;
+    height: @GraphHeightStyle;
+    position: relative;
+    left: 0%;
+    top: .4vh;
+    z-index: 20 !important;
+    float: left;
+    color: rgb(125,25,25);
+</Styled>
+<Styled @bind-Classname="@GraphBackgroundStyle">
+    float: right;
+    background-color: darkgray;
+    background-size: 100% 100%;   
+    border: none;
+    outline: none;
+    width: 100%;
+    height: @GraphHeightStyle;
+    position: absolute;
+    left: 0%;
+    top: .2vh;
+    z-index: 10 !important;
+</Styled>
+
+<div class="blazorvideoplayer">
+    <br><br>
+    <video class="videocomponent" id="videoPlayer" controlsList="@ControlsList" oncontextmenu="@ContextMenuInfo">
+        <source src="@VideoUrl" type="video/mp4">
+        Your browser does not support HTML video.
+    </video> 
+
+    @if(ShowControlsContainer)
+    {  
+        <div class="controlcontainer">
+            @if(Playing)
+            { 
+                <button class="pausebutton" @onclick="PlayOrPause"></button>
+            }
+            else
+            {
+                <button class="playbutton" @onclick="PlayOrPause"></button>
+            }
+            <label id="videoTime" class="timedisplay">@DisplayTime</label>
+            <label id="videoDuration" class="videoduration">@VideoDuration</label>            
+            <button class="fullscreen" @onclick="OpenFullScreen"></button>
+            <div class="@GraphBackgroundStyle">
+                <button id="graphButton" class="@GraphStyle" @onclick="GraphClicked" ></button>
+            </div>
+        </div>
+    }
+</div>
