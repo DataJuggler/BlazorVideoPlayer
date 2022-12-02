@@ -9,7 +9,7 @@ using DataJuggler.Blazor.Components;
 using DataJuggler.Blazor.Components.Interfaces;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
-using DataJuggler.UltimateHelper.Core;
+using DataJuggler.UltimateHelper;
 using Microsoft.JSInterop;
 using System.Threading.Tasks;
 

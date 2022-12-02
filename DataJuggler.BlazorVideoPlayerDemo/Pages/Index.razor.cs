@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 using DataJuggler.Blazor.Components;
 using DataJuggler.Blazor.Components.Interfaces;
 using System.Data;
-using DataJuggler.UltimateHelper.Core;
+using DataJuggler.UltimateHelper;
 using System.Text;
 
 #endregion

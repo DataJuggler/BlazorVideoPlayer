@@ -2,7 +2,7 @@
 
 #region using statements
 
-using DataJuggler.UltimateHelper.Core;
+using DataJuggler.UltimateHelper;
 using Microsoft.JSInterop;
 using System.Threading.Tasks;
 

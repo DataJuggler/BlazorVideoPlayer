@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
-using DataJuggler.UltimateHelper.Core;
+using DataJuggler.UltimateHelper;
 
 namespace DataJuggler.BlazorVideo
 {
