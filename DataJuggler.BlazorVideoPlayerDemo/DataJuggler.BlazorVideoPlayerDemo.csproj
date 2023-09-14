@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="DataJuggler.Blazor.Components" Version="7.2.1" />
+    <PackageReference Include="DataJuggler.Blazor.Components" Version="7.12.7" />
   </ItemGroup>
 
   <ItemGroup>

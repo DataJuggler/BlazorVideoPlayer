@@ -225,14 +225,7 @@ namespace DataJuggler.BlazorVideoPlayerDemo.Pages
 
                     // for debugging only. Testing if JavaScript setting a value will update this.
                     // I suspect not, but all I can do is test to find out.
-                    int temp = NumericHelper.ParseInteger(displayTime, 0, -1);
-
-                    // if set
-                    if (temp > 10)
-                    {
-                        // break point only
-                        int x = 0;
-                    }
+                    int temp = NumericHelper.ParseInteger(displayTime, 0, -1);                    
                 }
             }
             #endregion
